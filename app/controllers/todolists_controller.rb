@@ -19,6 +19,9 @@ class TodolistsController < ApplicationController
   def show
     @list = List.find(params[:id])
   end
+  
+  def edit
+    @list = List.find(params[:])
 
   private
   # ストロングパラメータ
